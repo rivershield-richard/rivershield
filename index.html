@@ -4,69 +4,83 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>River Shield</title>
-
 <style>
-
 body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
 background:#f4f7f9;
 color:#333;
-line-height:1.6;
 }
-
+/* HERO */
 header{
-background:#0b3d5c;
+background:linear-gradient(135deg,#0b3d5c,#1e7fa6);
 color:white;
-padding:60px 20px;
+padding:100px 20px;
 text-align:center;
 }
-
 header h1{
-font-size:48px;
+font-size:56px;
 margin-bottom:10px;
 }
-
 header p{
 font-size:20px;
 opacity:0.9;
 }
-
+button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+background:white;
+color:#0b3d5c;
+font-weight:bold;
+border-radius:5px;
+cursor:pointer;
+}
+/* SECTIONS */
 section{
 padding:60px 20px;
 max-width:1000px;
 margin:auto;
 }
-
 h2{
 color:#0b3d5c;
-margin-bottom:20px;
 }
-
+/* FLOW */
 .flow{
-text-align:center;
-font-size:20px;
-line-height:2;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+.flow div{
 background:white;
-padding:30px;
+padding:15px 25px;
 border-radius:8px;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
-
+.arrow{
+font-size:24px;
+}
+/* CARDS */
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 margin-top:30px;
 }
-
 .card{
 background:white;
 padding:25px;
 border-radius:8px;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
+transition:0.2s;
 }
-
+.card:hover{
+transform:translateY(-5px);
+}
+/* FOOTER */
 footer{
 background:#0b3d5c;
 color:white;
@@ -74,128 +88,85 @@ text-align:center;
 padding:30px;
 margin-top:40px;
 }
-
 </style>
 </head>
-
 <body>
-
 <header>
 <h1>River Shield</h1>
 <p>Global River Cleanup & Recycling System</p>
 <p>Stopping plastic pollution before it reaches the oceans</p>
 <p><em>Concept by Richard Voldnes</em></p>
+<button>Learn More</button>
 </header>
-
 <section>
 <h2>The Problem</h2>
-
 <p>
 Plastic pollution enters the oceans mainly through rivers.
 Around <strong>1000 rivers</strong> contribute most of the plastic waste reaching the oceans.
-Instead of cleaning plastic once it spreads across the ocean,
-River Shield focuses on intercepting pollution directly in rivers.
+River Shield focuses on intercepting pollution before it spreads.
 </p>
-
 <div class="flow">
-Cities<br>
-↓<br>
-Drainage Systems<br>
-↓<br>
-Rivers<br>
-↓<br>
-Oceans
+<div>Cities</div>
+<div class="arrow">→</div>
+<div>Drainage</div>
+<div class="arrow">→</div>
+<div>Rivers</div>
+<div class="arrow">→</div>
+<div>Oceans</div>
 </div>
-
 </section>
-
 <section>
-
 <h2>The River Shield Solution</h2>
-
-<p>
-River Shield is a global environmental system designed to stop plastic pollution before it reaches the oceans.
-The system combines river interception technology, recycling infrastructure,
-robotic cleanup, and community participation.
-</p>
-
 <div class="cards">
-
 <div class="card">
 <h3>Upstream Cleanup</h3>
-<p>
-Robotic machines and local teams remove garbage already trapped
-along riverbanks, vegetation and shallow areas.
-</p>
+<p>Removing accumulated waste along riverbanks and shallow areas using robotics and local teams.</p>
 </div>
-
 <div class="card">
 <h3>River Interception</h3>
-<p>
-Floating barriers guide plastic waste using the river current
-toward controlled collection zones.
-</p>
+<p>Floating barriers guide plastic waste toward controlled collection zones.</p>
 </div>
-
 <div class="card">
 <h3>Mothership Platform</h3>
-<p>
-A floating recycling hub receives waste, sorts materials,
-compresses plastic and prepares it for recycling.
-</p>
+<p>A floating hub that sorts, compresses and manages waste.</p>
 </div>
-
 <div class="card">
 <h3>Recycling Hubs</h3>
-<p>
-Regional recycling facilities process recovered materials
-and convert them into reusable resources.
-</p>
+<p>Regional facilities convert collected waste into reusable materials.</p>
 </div>
-
 </div>
-
 </section>
-
 <section>
-
-<h2>System Flow</h2>
-
-<div class="flow">
-
-Upstream Cleanup<br>
-↓<br>
-River Interception Barriers<br>
-↓<br>
-Robot Collectors<br>
-↓<br>
-Mothership Recycling Platform<br>
-↓<br>
-Recycling Hubs
-
+<h2>Technology</h2>
+<div class="cards">
+<div class="card">
+<h3>Floating Barriers</h3>
+<p>Guides waste using natural river currents.</p>
 </div>
-
+<div class="card">
+<h3>Robot Collectors</h3>
+<p>Autonomous systems that gather and transport debris.</p>
+</div>
+<div class="card">
+<h3>Smart Stations</h3>
+<p>Recycling containers with scanning and reward systems.</p>
+</div>
+<div class="card">
+<h3>Mobile App</h3>
+<p>Connects users to recycling, tracking and cleanup services.</p>
+</div>
+</div>
 </section>
-
 <section>
-
 <h2>Global Impact</h2>
-
 <p>
-River Shield aims to create a global network of river cleanup systems.
-By stopping pollution at its source, the project can dramatically reduce
-plastic entering the oceans every year while also creating recycling
-infrastructure and local jobs.
+River Shield aims to create a global network of river cleanup systems,
+reducing plastic entering the oceans while creating jobs and recycling infrastructure.
 </p>
-
 </section>
-
 <footer>
-
 <p>River Shield Project</p>
 <p>Protecting rivers. Protecting oceans.</p>
-
 </footer>
-
 </body>
 </html>
